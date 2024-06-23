@@ -49,3 +49,33 @@ nav ul {
  margin-right: 150px;
  margin-left: 200px;
 }
+.f-bot {margin-bottom: 0}
+    .w37{width:37px;height:16px;display: inline-block;}
+    .w4{width:4px;height:16px;display: inline-block;}
+.chan-1 {
+  margin-left:30px;
+  width: 550px;
+}
+.chan-2 {
+    width: 300px;
+    position: relative;
+    float: right;
+    right: 280px;
+    bottom: 170px;
+}
+.my-button {
+    border: 1px solid rgb(5, 130, 14);
+    background-color: #fff;
+    color: rgb(4, 117, 14);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.my-button:hover {
+    background-color: rgb(5, 117, 33);/* Màu nền xanh khi di chuột vào */
+    color: #131111; 
+}
+.form-control {
+    width: 500px; 
+}
