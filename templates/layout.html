@@ -46,6 +46,30 @@
     <body>
         {% block content %}{% endblock %}
     </body>
+    <div class="stores">
+        <h1>HỆ THỐNG CỬA HÀNG</h1>
+        <div class="section1">
+            <label for="city"></label>
+            <select id="city" name="city" onchange="capnhat()">
+                <option value="">Chọn tỉnh/thành phố</option>
+                <option value="Thành Phố Hà Nội">Thành Phố Hà Nội</option>
+                <option value="Thành Phố Hồ Chí Minh">Thành Phố Hồ Chí Minh</option>
+                <option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+            </select>
+        </div>
+        <div class="section2">
+            <label for="district"></label>
+            <select id="district" name="district" onchange="displayChiNhanh()">
+                <option value="">Chọn quận/huyện</option>
+            </select>
+        </div>
+
+        <h2>Địa chỉ cửa hàng</h2>
+
+        <div id="phuclong-section" class="scroll-box">
+            <ul id="diachi-list"></ul>
+        </div>
+    </div>
     <footer id="footer">
         <div class="f-bot">
             <div class="container">

@@ -24,3 +24,70 @@
   width: 1083px;
   height: 325px;
 }
+.stores {
+  padding-left: 30px;
+  background-color: #006633;
+  width: 1080px;
+}
+
+h1 {
+  padding-top:4%;
+  margin-left:3%;
+  text-align:left;
+  font-size: 36px;
+}
+
+.section1{
+  display: inline-block;
+  margin-right: 0.00000000000000001%;
+  float:left;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: #006633;
+  color: white;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.scroll-box {
+  width: 50%;
+  max-height: 200px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+#diachi-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#diachi-list li {
+  padding: 5px;
+  align-items:left;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.button {
+  margin-left:3px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  color:black;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #006633;
+}
