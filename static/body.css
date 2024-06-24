@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&subset=vietnamese");
+.banner{
+  display: flex;  
+}
+.row-cow-1{
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+  }
+  .background-img1{
+    margin-left: 50px;
+    width: 530px;
+    height: 530px;
+    object-fit: cover;
+  }
+  .text-row-1{
+    margin-left: 50px;
+    font-size: 24px;
+    font-family: 'Muli', sans-serif;
+    color: #0c713d;
+  }
+.homebanner{
+  width: 1083px;
+  height: 325px;
+}

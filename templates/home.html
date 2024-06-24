@@ -1,7 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
 <!-- Body code starts from here-->
-<div class="TrangChu">
-    <img src="{{ url_for('static', filename='images/home_bg.jpg') }}" height="450px">
+<div>
+    <img class="homebanner" src="{{ url_for('static', filename='images/home_bg.jpg')}}"/>
+</div>
+<div class="row-cow-1">
+    <div class="img-row-cow-1">
+        <img class="background-img1" src="https://phuclong.com.vn/uploads/post/20649d183ca5f1-bannertrangchu.jpg"/>
+    </div>
+    <div class="text-row-1">
+        <h3 class="title">  TỪ NHỮNG MẦM TRÀ, CHÚNG TÔI TẠO RA NIỀM ĐAM MÊ</h3>
+    </div>
 </div>
 {% endblock content %}
