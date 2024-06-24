@@ -79,3 +79,19 @@ nav ul {
 .form-control {
     width: 500px; 
 }
+.BanquyenPL {
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.BanquyenPL::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    height: 100%; /* Chiều cao của phần tử */
+}
