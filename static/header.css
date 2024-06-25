@@ -31,24 +31,104 @@ a {
 .pay{
  flex: 0.5;
 }
-.container {
- max-width: 1200px;
- margin:auto;
-}
-nav {
- background-color: #f7f2f2;
- text-align: center;
- height:40px;
- padding:14px;   
-}
-nav ul {
- display: flex;
- justify-content: space-between;
- font-size: 15px;
- align-items: center;
- margin-right: 150px;
- margin-left: 200px;
-}
+.main-container {
+    max-width: 1200px;
+    margin:auto;
+ }
+ nav {
+     background-color: #f7f2f2;
+     text-align: center;
+     height:40px;
+     padding:14px;   
+ }
+ nav ul {
+     display: flex;
+     justify-content: space-between;
+     font-size: 15px;
+     align-items: center;
+     margin-right: 150px;
+     margin-left: 200px;
+ }
+ .main-menu li {
+    position: relative;
+ 
+ }
+ .main-menu ul.order-menu {
+    position: absolute;
+    background-color: #f8f8f8;
+    padding: 15px 0px;
+    list-style: none;
+    width:180px;
+    height: 120px;
+    display: block;
+    font-size: 17px;
+    display: none;
+    margin-left: 5px;
+    text-align:left ;
+ }
+ .main-menu li:hover ul.order-menu{
+    display:block;
+ }
+ .main-menu ul.order-menu a {
+    line-height: 25px;
+ }
+ .main-menu ul.product-menu{
+    position:absolute;
+    background-color: #f8f8f8;
+    list-style: none;
+    width:120px;
+    height: 140px;
+    display: block;
+    font-size: 17px;
+    display: none;
+    margin-left: 5px; 
+    text-align: left;
+ }
+ .main-menu li:hover ul.product-menu{
+    display:block;
+ }
+ .main-menu ul.product-menu a {
+    line-height: 25px;
+ }
+ .main-menu ul.about-menu{
+    position:absolute;
+    background-color: #f8f8f8;
+    list-style: none;
+    width:135px;
+    height: 140px;
+    display: block;
+    font-size: 17px;
+    display: none;
+    margin-left: 5px; 
+    text-align: left;
+ }
+ .main-menu li:hover ul.about-menu{
+    display:block;
+ }
+ .main-menu ul.about-menu a {
+    line-height: 25px;
+ }
+ .main-menu ul.search-menu{
+    position:absolute;
+    background-color: #f8f8f8;
+    list-style: none;
+    width:70px;
+    height: 40px;
+    display: block;
+    font-size: 17px;
+    display: none;
+    margin-left: 5px; 
+    text-align: left;
+ }
+ .main-menu li:hover ul.search-menu{
+    display:block;
+ }
+ .main-menu ul.search-menu a {
+    line-height: 25px;
+ }
+ 
+ 
+
 .f-bot {margin-bottom: 0}
     .w37{width:37px;height:16px;display: inline-block;}
     .w4{width:4px;height:16px;display: inline-block;}
