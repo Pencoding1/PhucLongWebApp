@@ -123,5 +123,6 @@ h2 {
 }
 
 .button:hover {
-  color: #006633;
+  color: #ffffff;
+  border: 1px solid orangered !important; 
 }
