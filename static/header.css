@@ -64,7 +64,10 @@ a {
     font-size: 17px;
     display: none;
     margin-left: 5px;
-    text-align:left ;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-top: 15px;
  }
  .main-menu li:hover ul.order-menu{
     display:block;
@@ -82,7 +85,10 @@ a {
     font-size: 17px;
     display: none;
     margin-left: 5px; 
-    text-align: left;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-top: 15px;
  }
  .main-menu li:hover ul.product-menu{
     display:block;
@@ -100,7 +106,10 @@ a {
     font-size: 17px;
     display: none;
     margin-left: 5px; 
-    text-align: left;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-top: 15px;
  }
  .main-menu li:hover ul.about-menu{
     display:block;
@@ -118,7 +127,10 @@ a {
     font-size: 17px;
     display: none;
     margin-left: 5px; 
-    text-align: left;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-top: 15px;
  }
  .main-menu li:hover ul.search-menu{
     display:block;
