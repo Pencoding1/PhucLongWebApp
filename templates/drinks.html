@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drinks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="thucuong">
+        <div class="banner">
+          <img src="image/banner.png">
+        </div>
+        <div class="page-heading">
+          <div class="container">
+            <ul class="breadcrumb">
+              <li class="active">
+                <a class="link" href="">Trang Chủ</a>
+              </li>
+              <li class="">
+                <a class="link" href="">Thức Uống</a>
+              </li>
+            </ul>
+            <h1>THỨC UỐNG</h1>
+                  <div class ="menu">
+                      <li class="active">
+                          <a href="" class="dish text-uppercase">Thức Uống</a>
+                      </li>
+                      <li class="">
+                          <a href="" class="dish text-uppercase">Snacks</a>
+                      </li>
+                      <li>
+                          <a href="" class="dish text-uppercase">Bakery</a>
+                      </li>
+                  </div>
+          </div>
+        </div>
+        <section class="category-toolbar">
+          <div class="container">
+              <div class="row">
+                  <form id="category-filter" class="form-inline">
+                      <div class="drinktype">
+                          <label for="category-group">Nhóm sản phẩm</label>
+                          <select name="category" class="select-picker">
+                                  <option value="">Chọn nhóm</option>
+                                  <option value="carameldua">Caramel dừa</option>
+                                  <option value="classical-coffe">Cà phê</option>
+                                  <option value="phuc-long-signature">Trà sữa nguyên bản</option>
+                                  <option value="tea">Trà nguyên bản</option>
+                          </select>
+                      </div>
+                      <div class="price">
+                          <label for="price-range" class="form-inline">Theo giá</label>
+                          <select name="price-range" class="select-picker">
+                                  <option value="">Không chọn</option>
+                                  <option value="asc">Từ thấp đến cao</option>
+                                  <option value="desc">Từ cao đến thấp</option>
+                          </select>
+                      </div>
+                      <div class="col-xs-12  col-md-4 col-sm-4 ">
+                          <label for="product-name"> Tìm kiếm</label>
+                          <div class="input-group add-on">
+                              <input class="form-control" placeholder="Tên sản phẩm" name="keyword" id="srch-term" type="text"  value = ''>
+                              <div class="input-group-btn">
+                                  <button class="btn btn-default" type="submit" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+  </section>
+      </div>
+        <div class="drink-list">
+            <div class="container">
+                <div class="row">
+                    <div class="sticky col-sm-6 col-xs-1 product-item">
+                        <a class="item-wrapper"> 
+                            <span class="badge best">Bán chạy</span>
+                            <span class="badge new">Món mới</span>
+                            <img class="sanpham" id="head-img" src="image/tra1.png">
+                            <div class="item-infor">
+                                <div class="item-name">Trà Ô Long Mãng Cầu Jelly Sữa Dừa</div>
+                                <div clas="item-desc"></div>
+                                <div class="item-price">65.000 đ</div>
+                                <button class="btn btn-default">LIÊN HỆ</button>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <span class="badge best">Bán chạy</span>
+                            <span class="badge new">Món mới</span>
+                            <img class="sanpham" src="image/tra2.png">
+                            <div class="item-infor">
+                                <div class="item-name">Trà Lài Mãng Cầu Đá Xay</div>
+                                <div class="item-desc">
+                                    <p>BST Cầu Phúc Đong Đầy - Long Niên May Mắn</p>
+                                </div>
+                                <div class="item-price">65.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <span class="badge best">Bán Chạy</span>
+                            <span class="badge new">Món mới</span>
+                            <img class="sanpham" src="image/tra3.png">
+                            <div class="item-infor">
+                                <div class="item-name">Trà Sữa Mãng Cầu Jelly Sữa Dừa</div>
+                                <div class="item-desc">
+                                    <p>BST Cầu Phúc Đong Đầy - Long Niên May Mắn</p>
+                                </div>
+                                <div class="item-price">65.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <span class="badge best">Bán Chạy</span>
+                            <span class="badge new">Món Mới</span>
+                            <img class="sanpham" src="image/tra4.png">
+                            <div class="item-infor">
+                                <div class="item-name">Trà Lucky</div>
+                                <div class="item desc">
+                                    <p>Lucky Tea</p>
+                                </div>
+                                <div class="item-price">50.000 đ</div>
+                                <button class="btn btn-default">LIÊN HỆ</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra5.png">
+                            <div class="item-infor">
+                                <div class="item-name">Hồng Trà Chanh</div>
+                                <div class="item-desc">
+                                    <p>Lime Black Tea</p>
+                                </div>
+                                <div class="item-price">40.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra6.png">
+                            <div class="item-infor">
+                                <div class="item-name">Trà Sữa Matcha</div>
+                                <div class="item-desc">
+                                    <p>Matcha Milk Tea</p>
+                                </div>
+                                <div class="item-price">45.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra7.png">
+                            <div class="item-infor">
+                                <div class="item-name">Hồng Trà Đào Sữa</div>
+                                <div class="item-desc">
+                                    <p>Peach Black Milk Tea</p>
+                                </div>
+                                <div class="item-price">55.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra8.png">
+                            <div class="item-infor">
+                                <div class="item-name">Chanh Đá Xay</div>
+                                <div class="item-desc">
+                                    <p>Lime Ice Blended</p>
+                                </div>
+                                <div class="item-price">50.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra9.png">
+                            <div class="item-infor">
+                                <div class="item-name">Matcha Đá Xay</div>
+                                <div class="item-desc">
+                                    <p>Matcha Ice Blended</p>
+                                </div>
+                                <div class="item-price">60.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra10.png">
+                            <div class="item-infor">
+                                <div class="item-name">Oreo Capuchino Đá Xay</div>
+                                <div class="item-desc">
+                                    <p>Oreo Espresso Ice Blended</p>
+                                </div>
+                                <div class="item-price">65.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra11.png">
+                            <div class="item-infor">
+                                <div class="item-name">Capuchino Đá Xay</div>
+                                <div class="item-desc">
+                                    <p>Espresso Ice Blended</p>
+                                </div>
+                                <div class="item-price">60.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra12.png">
+                            <div class="item-infor">
+                                <div class="item-name">Sữa Chua Phúc Bồn Tử Đác Cam</div>
+                                <div class="item-desc">
+                                    <p>Raspberry Yogurt with Orange Dac Seed</p>
+                                </div>
+                                <div class="item-price">70.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra13.png">
+                            <div class="item-infor">
+                                <div class="item-name">Sữa Chua Xoài Đác Thơm</div>
+                                <div class="item-desc">
+                                    <p>Mango Yogurt with Pineapple Dac Seed</p>
+                                </div>
+                                <div class="item-price">70.000 đ</div>
+                                <button class="btn btn-default add-to'">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra14.png">
+                            <div class="item-infor">
+                                <div class="item-name">Cappuchino</div>
+                                <div class="item-desc"></div>
+                                <div class="item-price">45.000 đ</div>
+                                <button class="btn btn-default add-to">ĐẶT HÀNG</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sticky col-sm-6 product-item">
+                        <a class="item-wrapper">
+                            <img class="sanpham" src="image/tra15.png">
+                            <div class="item-infor">
+                                <div class="item-name">Hồng Trà Đác Cam Đá Xay</div>
+                                <div class="item-desc">
+                                    <p>Orange Dac Seed Black Tea Ice Blended</p>
+                                </div>
+                                <div class="item-price">70.000 đ</div>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀND</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
