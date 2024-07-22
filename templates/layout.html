@@ -12,94 +12,90 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    
-    
-    
     {% if title %}
         <title>{{ title }}</title>
     {% else %}
         <title>PhucLong Coffee & Tea</title>
     {% endif %}
-    <header>
-        <div class="background-top">
-            <div class="logo"> 
-                <img src="https://th.bing.com/th?id=OIP.sVIZQwgTNaeP_-Z3L9xHyQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="80px" title="logoPL">
-            </div> 
-            <div class="login"> 
-                <li><a href="#" onclick="openLoginModal()">Đăng Nhập</a></li>
-            </div>
-            <div class="Pay">
-                <li><a href="#" onclick="goToCartPage()">Giỏ Hàng </a><i class="fa-solid fa-cart-shopping"></i></li> 
-            </div>
-        </div>
-        <nav>
-            <div class="main-container" >
-                <div class="main-menu">
-                <ul>
-                    <li><a href="#"><b>TRANG CHỦ</b></a></li>
-                    <li><a href=""><b>THỨC UỐNG</b></a>
-                        <ul class="order-menu">
-                            <li><a href="">Thức uống</a></li>
-                            <li><a href=""> Bánh tráng miệng </a></li>
-                             <li><a href="">Đồ ăn mặn</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><b>SẢN PHẨM</b></a>
-                        <ul class="product-menu">
-                            <li><a href="">Trà hộp</a></li>
-                                        <!-- <ul>
-                                            <li>Trà túi lọc</li>
-                                            <li>Trà túi tam giác</li>
-                                            <li>Trà hộp giấy</li>
-                                            <li>Trà hộp xám</li>
-                                        </ul> -->
-                            <li><a href="">Trà gói</a></li>
-                                        <!-- <ul>
-                                            <li>Trà Thái Nguyên</li>
-                                            <li>Trà gói cao cấp</li>
-                                            <li>Trà văn lý hương</li>
-                                            <li>Trà đen</li>
-                                            <li>Trà sen</li>
-                                            <li>Trà xanh</li>
-                                            <li>Trà lài</li>
-                                        </ul> -->
-                            <li><a href="">Trà lon</a></li>
-                                        <!-- <ul>
-                                            <li>Trà lon giấy</li>
-                                            <li>Trà lon giấy cao cấp</li>
-                                            <li>Trà lon thiếc</li>
-                                            <li>Trà Ô Long Thượng Hạng</li>
-                                        </ul> -->
-                            <li><a href="">Cà phê</a></li>
-                                    <!-- <ul>
-                                        <li>Cà phê Set</li>
-                                        <li>Cà phê Phin nhôm</li>
-                                        <li>Cà phê mùi</li>
-                                        <li>Cà phê hạt</li>
-                                    </ul> -->
-                        </ul>
-                    </li>
-                    <li><a href="#"><b>VỀ CHÚNG TÔI</b></a>
-                        <ul class="about-menu">
-                            <li><a href="">Công Ty</a></li>
-                            <li><a href="">Tuyển Dụng</a></li>
-                            <li><a href="">Thư Viện</a></li>
-                            <li><a href="">Liên Hệ</a></li>
-                        </ul>
-                    </li>                      
-                    <li><a href="#"><i class="fas fa-search"></i></a>
-                        <ul class="about-menu">
-                            <li><a href="">Sản phẩm cà phê</a></li>
-                            <li><a href="">Sản phẩm Trà</a></li>
-                        </ul>
-                    </li>
+    <body>
+        <header>
+            <div class="background-top">
+                <div class="logo"> 
+                    <img src="https://th.bing.com/th?id=OIP.sVIZQwgTNaeP_-Z3L9xHyQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="80px" title="logoPL">
+                </div> 
+                <div class="login"> 
+                    <li><a href="#" onclick="openLoginModal()">Đăng Nhập</a></li>
+                </div>
+                <div class="Pay">
+                    <li><a href="#" onclick="goToCartPage()">Giỏ Hàng </a><i class="fa-solid fa-cart-shopping"></i></li> 
                 </div>
             </div>
-        </nav>
-        </nav>
-    </header>
-    <body>
+            <nav>
+                <div class="main-container" >
+                    <div class="main-menu">
+                    <ul>
+                        <li><a href="#"><b>TRANG CHỦ</b></a></li>
+                        <li><a href=""><b>THỨC UỐNG</b></a>
+                            <ul class="order-menu">
+                                <li><a href="">Thức uống</a></li>
+                                <li><a href=""> Bánh tráng miệng </a></li>
+                                 <li><a href="">Đồ ăn mặn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><b>SẢN PHẨM</b></a>
+                            <ul class="product-menu">
+                                <li><a href="">Trà hộp</a></li>
+                                            <!-- <ul>
+                                                <li>Trà túi lọc</li>
+                                                <li>Trà túi tam giác</li>
+                                                <li>Trà hộp giấy</li>
+                                                <li>Trà hộp xám</li>
+                                            </ul> -->
+                                <li><a href="">Trà gói</a></li>
+                                            <!-- <ul>
+                                                <li>Trà Thái Nguyên</li>
+                                                <li>Trà gói cao cấp</li>
+                                                <li>Trà văn lý hương</li>
+                                                <li>Trà đen</li>
+                                                <li>Trà sen</li>
+                                                <li>Trà xanh</li>
+                                                <li>Trà lài</li>
+                                            </ul> -->
+                                <li><a href="">Trà lon</a></li>
+                                            <!-- <ul>
+                                                <li>Trà lon giấy</li>
+                                                <li>Trà lon giấy cao cấp</li>
+                                                <li>Trà lon thiếc</li>
+                                                <li>Trà Ô Long Thượng Hạng</li>
+                                            </ul> -->
+                                <li><a href="">Cà phê</a></li>
+                                        <!-- <ul>
+                                            <li>Cà phê Set</li>
+                                            <li>Cà phê Phin nhôm</li>
+                                            <li>Cà phê mùi</li>
+                                            <li>Cà phê hạt</li>
+                                        </ul> -->
+                            </ul>
+                        </li>
+                        <li><a href="#"><b>VỀ CHÚNG TÔI</b></a>
+                            <ul class="about-menu">
+                                <li><a href="">Công Ty</a></li>
+                                <li><a href="">Tuyển Dụng</a></li>
+                                <li><a href="">Thư Viện</a></li>
+                                <li><a href="">Liên Hệ</a></li>
+                            </ul>
+                        </li>                      
+                        <li><a href="#"><i class="fas fa-search"></i></a>
+                            <ul class="about-menu">
+                                <li><a href="">Sản phẩm cà phê</a></li>
+                                <li><a href="">Sản phẩm Trà</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+            </nav>
+        </header>
         {% block content %}{% endblock %}
     </body>
     <footer id="footer">

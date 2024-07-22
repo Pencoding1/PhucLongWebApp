@@ -8,7 +8,7 @@ app = Flask(__name__, template_folder=template_path, static_folder=static_path)
 @app.route("/")
 @app.route("/home")
 def home():
-   return render_template("home.html")
+   return render_template("managerDashboard.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

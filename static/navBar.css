@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+.text-muted{
+    color: rgb(138, 141, 141) !important;
+}
+.wrap{
+    position: fixed !important;
+    color:aliceblue
+}
+.nav-link{
+    font-size: larger;
+}   

@@ -7,7 +7,7 @@
 <div class="col">
     <div class="row-1">
         <div class="img-row-cow-1">
-            <img class="background-img1" src="https://phuclong.com.vn/uploads/post/20649d183ca5f1-bannertrangchu.jpg"/>
+            <img class="background-img1" src="{{url_for("static", filename='images/20649d183ca5f1-bannertrangchu.jpg')}}"/>
         </div>
         <div class="text-row-1">
             <div class="text-col">
@@ -51,5 +51,5 @@
         <ul id="diachi-list"></ul>
     </div>
 </div>
-<script src="{{url_for('static', filename='script/navigator.js')}}"></script>
+<script src="{{url_for("static", filename="script/navigator.js")}}"></script>
 {% endblock content %}
