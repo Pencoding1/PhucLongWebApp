@@ -1,134 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='body.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    {% if title %}
-        <title>{{ title }}</title>
-    {% else %}
-        <title>PhucLong Coffee & Tea</title>
-    {% endif %}
-    <body>
-        <header>
-            <div class="background-top">
-                <div class="logo"> 
-                    <img src="https://th.bing.com/th?id=OIP.sVIZQwgTNaeP_-Z3L9xHyQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="80px" title="logoPL">
-                </div> 
-                <div class="login"> 
-                    <li><a href="#" onclick="openLoginModal()">Đăng Nhập</a></li>
-                </div>
-                <div class="Pay">
-                    <li><a href="#" onclick="goToCartPage()">Giỏ Hàng </a><i class="fa-solid fa-cart-shopping"></i></li> 
-                </div>
-            </div>
-            <nav>
-                <div class="main-container" >
-                    <div class="main-menu">
-                    <ul>
-                        <li><a href="#"><b>TRANG CHỦ</b></a></li>
-                        <li><a href=""><b>THỨC UỐNG</b></a>
-                            <ul class="order-menu">
-                                <li><a href="">Thức uống</a></li>
-                                <li><a href=""> Bánh tráng miệng </a></li>
-                                 <li><a href="">Đồ ăn mặn</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><b>SẢN PHẨM</b></a>
-                            <ul class="product-menu">
-                                <li><a href="">Trà hộp</a></li>
-                                            <!-- <ul>
-                                                <li>Trà túi lọc</li>
-                                                <li>Trà túi tam giác</li>
-                                                <li>Trà hộp giấy</li>
-                                                <li>Trà hộp xám</li>
-                                            </ul> -->
-                                <li><a href="">Trà gói</a></li>
-                                            <!-- <ul>
-                                                <li>Trà Thái Nguyên</li>
-                                                <li>Trà gói cao cấp</li>
-                                                <li>Trà văn lý hương</li>
-                                                <li>Trà đen</li>
-                                                <li>Trà sen</li>
-                                                <li>Trà xanh</li>
-                                                <li>Trà lài</li>
-                                            </ul> -->
-                                <li><a href="">Trà lon</a></li>
-                                            <!-- <ul>
-                                                <li>Trà lon giấy</li>
-                                                <li>Trà lon giấy cao cấp</li>
-                                                <li>Trà lon thiếc</li>
-                                                <li>Trà Ô Long Thượng Hạng</li>
-                                            </ul> -->
-                                <li><a href="">Cà phê</a></li>
-                                        <!-- <ul>
-                                            <li>Cà phê Set</li>
-                                            <li>Cà phê Phin nhôm</li>
-                                            <li>Cà phê mùi</li>
-                                            <li>Cà phê hạt</li>
-                                        </ul> -->
-                            </ul>
-                        </li>
-                        <li><a href="#"><b>VỀ CHÚNG TÔI</b></a>
-                            <ul class="about-menu">
-                                <li><a href="">Công Ty</a></li>
-                                <li><a href="">Tuyển Dụng</a></li>
-                                <li><a href="">Thư Viện</a></li>
-                                <li><a href="">Liên Hệ</a></li>
-                            </ul>
-                        </li>                      
-                        <li><a href="#"><i class="fas fa-search"></i></a>
-                            <ul class="about-menu">
-                                <li><a href="">Sản phẩm cà phê</a></li>
-                                <li><a href="">Sản phẩm Trà</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                </div>
-            </nav>
-            </nav>
-        </header>
-        {% block content %}{% endblock %}
-    </body>
-    <footer id="footer">
-        <div class="f-bot">
-            <div class="container">
-                <div class="row">
-                    <div class="chan-1"> 
-                        <b>Trụ sở chính</b>: Công ty Cổ Phần Phúc Long Heritage - ĐKKD: 0316 871719</br>
-                        do sở KHĐT TPHCM cấp lần đầu ngày 21/05/2021</br>
-                        <b>Nhà máy</b>: D_8D_CN Đường XE 1, Khu Công Nghiệp Mỹ Phước III, phường Mỹ Phước, thị xã Bến Cát, tỉnh Bình Dương, Việt Nam<br>
-                        <b>Địa chỉ</b>: Phòng 702, Tầng 7, Tòa nhà Central Plaza, số 17 Lê Duẩn, phường Bến Nghé, quận 1, Hồ Chí Minh</br>
-                        <b>Hotline Đặt hàng</b>: 1800 6779</br>
-                        <b>Hotline Công ty</b>: 1900 2345 18 (Bấm phím 0: Lễ Tân | phím 1: CSKH) </br>
-                        <b class="w37">Email</b><span class="w4">:</span><span class="w1"> sales@phuclong.masangroup.com;info2@phuclong.masangroup.com</span>
-                    </div>
-                <div class="chan-2">
-                    <br for="newsletter-email"><b>Đăng ký nhận tin khuyến mãi</b></label>
-                        <form method="POST" action="https://phuclong.com.vn/send" accept-charset="UTF-8" class="form-inline" id="form-newsletter"><input name="_token" type="hidden" value="dxa62Ujw1Oii8qtpwOhHLDlVXJqCLdRox2o1iUh2">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="newsletter-email" name="newsletter-email" placeholder="Nhập địa chỉ email" style="width: 50%" style="border: 1px solid rgb(5, 79, 3);"> <button class="my-button">GỬI</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename="layout.css")}}">
+    <link rel="stylesheet" href="{{url_for('static', filename="body.css")}}">
+    <!--import third-parties script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename="script/sidebar.js")}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Phúc Long Coffee & Tea</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid fixed-top" style="padding-top:10px">
+            <div class="h_top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="h_delivered" style="width: 200px; heigth: 50px; padding-left:50px">
+                                <a href="tel:18006779"><img src="{{url_for("static", filename="images/delivery.png")}}"></a>
                             </div>
-                        </form>
-                        <br/>
-                         <ul>
-                            <li><a href="https://phuclong.com.vn/chinh-sach-dat-hang">Chính sách đặt hàng</a></li>
-                            <li><a href="https://phuclong.com.vn/chinh-sach-bao-mat-thong-tin">Chính sách bảo mật thông tin</a></li>
-                        </ul>
+                        </div>
+                        <div class="col-5">
+                            <div class="h_logo">
+                                <div class="h_logo_image">
+                                    <section>
+                                        <a href="phuclong.com.vn">
+                                            <img src="{{url_for("static", filename="images/logo.png")}}" class="carousel-image">
+                                            <img src="{{url_for("static", filename="images/logo_1.png")}}" class="carousel-image">
+                                            <img src="{{url_for("static", filename="images/logo_2.png")}}"class="carousel-image">
+                                        </a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="h_right" style="display:flex; justify-content:right;">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="color:black;"><b>Đăng Nhập</b></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link h_menu_Right" href="#" style="color: #198754">VN</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link h_menu_Right" href="#" style="color: gray">|</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link h_menu_Right" href="#" style="color: gray">EN</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="btn btn-outline-success" href="#" id="CartButton">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ Hàng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
                     </div>
-                </div>
             </div>
+            <div class="h_menu">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavMenu" aria-controls="NavMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        <div class="collapse navbar-collapse" id="NavMenu">
+                            <ul class="navbar-nav me-auto mb-2 mb lg-0">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active" aria-current="page" style="color: #029823"><b>TRANG CHỦ</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a href="#" class="nav-link active dropbtn"><b>THỨC UỐNG</b></a>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a href="#" class="nav-link active dropbtn"><b>BÁNH NGỌT</b></a>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a href="#" class="nav-link active dropbtn"><b>KHUYẾN MÃI</b></a>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a href="#" class="nav-link active dropbtn"><b>VỀ CHÚNG TÔI</b></a>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="d-flex pe-5">
+                                <input class="form-control me-2" type="search" placeholder="Search" arial-label="Search">
+                                <button class="btn btn-outline-dark" type="submit"><i class="lni lni-search-alt"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
         </div>
-    </footer>
-    <div class="BanquyenPL">
-        © 2017 Bản quyền Phuc Long Co., Ltd<br class="Chunen" />
-    </div>
-</html>
+        <script src="{{url_for("static", filename="script/layout.js")}}"></script>
+    </header>
+    {% block content %}{% endblock %}
+    <footer></footer>
+</body>

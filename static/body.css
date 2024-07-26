@@ -1,68 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&subset=vietnamese");
-.banner{
-  display: flex;  
-}
-.col{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.row-1{
-  position: relative;
-  margin-top: 150px;
-  display: flex;
-  flex-direction: row;
-}
-.background-img1{
-  background-size: cover;
-  overflow: hidden;
-  margin-left: 50px;
-  width: 480px;
-  height: 440px;
-  object-fit: cover;
-}
-.text-row-1{
-  margin-top: 50px;
-  margin-left: 50px;
-  font-family: 'Muli', sans-serif;
-}
-.text-col{
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-}
-.title{
-  color: #0c713d;
-  font-size: 24px;
-  font-weight: lighter;
-}
-.p{
-  margin-top: 40px;
-  font-size: 14px;
-  color: #000;
-  text-align:start;
-}
-.homebanner{
-  overflow: hidden;
-  background-size: cover;
-  height: 325px;
-}
-.btn-outline-primary {
-  width: 100px;
-  color:#0c713d !important;
-  outline: 2px;
-  border-color: #0c713d !important;
-}
-.btn-outline-primary:hover{
-  color: white !important;
-  background-color: #0c713d;
-}
-.stores {
-  padding-left: 30px;
-  background-color: #006633;
-  width: 1080px;
-}
+/*Main Content*/
 
+/*Stores*/
 .headline {
   color:white;
   padding-top:4%;
