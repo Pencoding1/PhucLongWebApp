@@ -1,52 +1,101 @@
 {% extends "layout.html" %}
 {% block content %}
 <!-- Body code starts from here-->
-<!-- Slideshow container -->
-<div class="container-fluid">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+<div class="slideshow-container">
+
+<div class="mySlides slide">
+  <img src="{{url_for("static", filename="images/home/slide1.jpg")}}" style="width:100%">
+</div>
+
+<div class="mySlides slide">
+  <img src="{{url_for("static", filename="images/home/slide2.jpg")}}" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot active" onclick="currentSlide(1)"></span> 
+  <span class="dot active" onclick="currentSlide(2)"></span> 
+</div>
+<!-- The main content -->
+<div class="container-fluid" style="padding-bottom: 100px">
+    <div class="container">
+        <div class="row row-1">
+            <div class="col">
+                <img src="{{url_for("static", filename="images/home/img1.jpg")}}" style="width: 530px; heigth: 530px;">
+            </div>
+            <div class="col">
+                    <h2 class="title" style="font-size:22px;color: #006633;padding-top:130px;">TỪ NHỮNG MẦM TRÀ, CHÚNG TÔI TẠO RA NIỀM ĐAM MÊ</h2>
+                    <br>
+                    <p style="font-size:14px">Trải qua hơn 50 năm chắt chiu tinh hoa từ những búp trà xanh và hạt cà phê thượng hạng cùng mong muốn mang lại 
+                        cho khách hàng những trải nghiệm giá trị nhất khi thưởng thức, Phúc Long liên tục là thương hiệu tiên phong với 
+                        nhiều ý tưởng sáng tạo đi đầu trong ngành trà và cà phê. 
+                        <br>
+                        <br>
+                        Chúng tôi tin rằng từng sản phẩm trà và cà phê sẽ càng thêm hảo hạng khi được tạo ra từ sự phấn đấu không ngừng 
+                        cùng niềm đam mê. Và chính kết nối dựa trên niềm tin, sự trung thực và tin yêu sẽ góp phần mang đến những nét đẹp 
+                        trong văn hóa thưởng trà và cà phê ngày càng bay cao, vươn xa.
+                    </p>
+                    <a class="btn btn-outline-success" href="#"> XEM THÊM </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row row-2">
+            <div class="col-sm-6">
+                    <h2 class="title" style="font-size:22px;color: #006633; padding-top:130px">ĐỘI NGŨ NHÂN VIÊN TRÀN ĐẦY NHIỆT HUYẾT</h2>
+                    <br>
+                    <p style="font-size:14px">Trong suốt quá trình hoạt động và phát triển, đội ngũ quản lý và nhân viên của Phúc Long Coffee & Tea,
+                         qua bao thế hệ, đã cùng nhau xây dựng, nuôi dưỡng niềm đam mê dành cho trà và cà phê với mong muốn được
+                          thử thách bản thân trong ngành dịch vụ năng động và sáng tạo.
+                    </p>
+                    <a class="btn btn-outline-success" href="#"> GIA NHẬP ĐỘI NGŨ PHÚC LONG </a>
+            </div>
+            <div class="col">
+                <img src="{{url_for("static", filename="images/home/img2.jpg")}}" style="width: 320px; heigth: 475px;">
+            </div>
+        </div>
+    </div>
 </div>
 <!--Stores Menu-->
 <div class="container-fluid" style="background-color: #006633">
     <h2 class='headline'>HỆ THỐNG CỬA HÀNG</h2>
-    <div class="section1">
-        <label for="city"></label>
-        <select id="city" name="city" onchange="capnhat()">
-            <option value="">Chọn tỉnh/thành phố</option>
-            <option value="Thành Phố Hà Nội">Thành Phố Hà Nội</option>
-            <option value="Thành Phố Hồ Chí Minh">Thành Phố Hồ Chí Minh</option>
-            <option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
-        </select>
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="city"></label>
+            <select id="city" name="city" onchange="capnhat()">
+                <option value="">Chọn tỉnh/thành phố</option>
+                <option value="Thành Phố Hà Nội">Thành Phố Hà Nội</option>
+                <option value="Thành Phố Hồ Chí Minh">Thành Phố Hồ Chí Minh</option>
+                <option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+            </select>
+        </div>
+        <div class="col-sm-9" style="padding-top:23px">
+            <label for="district"></label>
+            <select id="district" name="district" onchange="displayChiNhanh()">
+                <option value="">Chọn quận/huyện</option>
+            </select>
+        </div>
     </div>
-    <div class="section2">
-        <label for="district"></label>
-        <select id="district" name="district" onchange="displayChiNhanh()">
-            <option value="">Chọn quận/huyện</option>
-        </select>
-    </div>
-
     <h3 class='headline'>Địa chỉ cửa hàng</h2>
 
     <div id="phuclong-section" class="scroll-box">
         <ul id="diachi-list"></ul>
     </div>
 </div>
+<br>
 <script src="{{url_for("static", filename="script/navigator.js")}}"></script>
+<script src="{{url_for("static", filename="script/slider.js")}}"></script>
 {% endblock content %}
