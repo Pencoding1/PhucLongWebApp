@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="drinks.css"> 
+    <link rel="stylesheet" href="{{url_for("static", filename="drinks.css")}}"> 
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="thucuong">
         <div class="banner">
-          <img src="image/banner.png">
+          <img src="{{url_for("static", filename="images/nuoc//banner.png")}}">
         </div>
         <div class="page-heading">
           <div class="container">
@@ -63,7 +64,7 @@
                           <div class="input-group add-on">
                               <input class="form-control" placeholder="Tên sản phẩm" name="keyword" id="srch-term" type="text"  value = ''>
                               <div class="input-group-btn">
-                                  <button class="btn btn-default" type="submit" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button class="btn btn-default" type="submit"><i class="lni lni-search-alt"></i></button>
                               </div>
                           </div>
                       </div>
@@ -79,7 +80,7 @@
                         <a class="item-wrapper"> 
                             <span class="badge best">Bán chạy</span>
                             <span class="badge new">Món mới</span>
-                            <img class="sanpham" id="head-img" src="image/tra1.png">
+                            <img class="sanpham" id="head-img" src="{{url_for("static", filename="images/nuoc/tra1.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Trà Ô Long Mãng Cầu Jelly Sữa Dừa</div>
                                 <div clas="item-desc"></div>
@@ -92,7 +93,7 @@
                         <a class="item-wrapper">
                             <span class="badge best">Bán chạy</span>
                             <span class="badge new">Món mới</span>
-                            <img class="sanpham" src="image/tra2.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra2.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Trà Lài Mãng Cầu Đá Xay</div>
                                 <div class="item-desc">
@@ -107,7 +108,7 @@
                         <a class="item-wrapper">
                             <span class="badge best">Bán Chạy</span>
                             <span class="badge new">Món mới</span>
-                            <img class="sanpham" src="image/tra3.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra3.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Trà Sữa Mãng Cầu Jelly Sữa Dừa</div>
                                 <div class="item-desc">
@@ -122,7 +123,7 @@
                         <a class="item-wrapper">
                             <span class="badge best">Bán Chạy</span>
                             <span class="badge new">Món Mới</span>
-                            <img class="sanpham" src="image/tra4.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra4.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Trà Lucky</div>
                                 <div class="item desc">
@@ -135,7 +136,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra5.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra5.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Hồng Trà Chanh</div>
                                 <div class="item-desc">
@@ -148,7 +149,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra6.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra6.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Trà Sữa Matcha</div>
                                 <div class="item-desc">
@@ -161,7 +162,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra7.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra7.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Hồng Trà Đào Sữa</div>
                                 <div class="item-desc">
@@ -174,7 +175,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra8.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra8.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Chanh Đá Xay</div>
                                 <div class="item-desc">
@@ -187,7 +188,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra9.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra9.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Matcha Đá Xay</div>
                                 <div class="item-desc">
@@ -200,7 +201,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra10.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra10.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Oreo Capuchino Đá Xay</div>
                                 <div class="item-desc">
@@ -213,7 +214,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra11.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra11.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Capuchino Đá Xay</div>
                                 <div class="item-desc">
@@ -226,7 +227,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra12.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra12.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Sữa Chua Phúc Bồn Tử Đác Cam</div>
                                 <div class="item-desc">
@@ -239,7 +240,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra13.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra13.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Sữa Chua Xoài Đác Thơm</div>
                                 <div class="item-desc">
@@ -252,7 +253,7 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra14.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra14.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Cappuchino</div>
                                 <div class="item-desc"></div>
@@ -263,14 +264,14 @@
                     </div>
                     <div class="sticky col-sm-6 product-item">
                         <a class="item-wrapper">
-                            <img class="sanpham" src="image/tra15.png">
+                            <img class="sanpham" src="{{url_for("static", filename="images/nuoc/tra15.png")}}">
                             <div class="item-infor">
                                 <div class="item-name">Hồng Trà Đác Cam Đá Xay</div>
                                 <div class="item-desc">
                                     <p>Orange Dac Seed Black Tea Ice Blended</p>
                                 </div>
                                 <div class="item-price">70.000 đ</div>
-                                <button class="btn btn-default add-to-cart">ĐẶT HÀND</button>
+                                <button class="btn btn-default add-to-cart">ĐẶT HÀNG</button>
                             </div>
                         </a>
                     </div>
