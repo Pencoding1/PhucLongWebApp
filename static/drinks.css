@@ -1,303 +1,138 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+.title-sep-right{
+  background-color: #9999999b;
+  border-color: #99999989;
+  border-radius: 2px;
+  height: 1.5px;
+  width: 160px;
+  position: relative;
+  left: 429px;
+  bottom: 0.7rem;
 }
-
-.thucuong {
-  text-align: center;
+.title-sep-left{
+  background-color: #9999999b;
+  border-color: #99999989;
+  border-radius: 2px;
+  height: 1.5px;
+  width: 160px;
+  position: relative;
+  left: 665px;
+  bottom: 0.7rem;
 }
-
-.banner img {
-  width: 100%;
-  height: auto;
+.leaf-1{
+  padding-bottom: 3px;
+  position: relative;
+  left: 644px;
+  top: 38px;
+	width: 25px;
+	height: 40px;
+	border-radius: 0 30px;
+	background-color: #99999989;
+	transform: rotate(70deg);
 }
-
-.page-heading {
-  padding: 20px 0;
+.leaf-2{
+  position: relative;
+  top: 10px;
+  left: 605px;
+  width: 25px;
+	height: 40px;
+	border-radius: 0 30px;
+	background-color: #99999989;
+	transform: rotate(140deg);
 }
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: left;
+.leaf-3{
+  position: relative;
+  bottom: 36px;
+  left: 621px;
+  width: 20px;
+	height: 20px;
+	border-radius: 0 30px;
+	background-color: #99999989;
+	transform: rotate(19deg);
 }
-
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.btn-primary-outline{
+  border-color: #cccccc;
 }
-
-.breadcrumb li {
-  display: inline;
-}
-
-.breadcrumb li + li:before {
-  content: "/";
-  margin: 0 10px;
-  color: #b0b0b0;
-}
-
-.link {
-  text-decoration: none;
-  color: dimgrey;
-  transition: color 0.3s ease;
-}
-
-.link:hover {
-  color: orangered;
-}
-
-.active .link {
-  color:dimgray;
-}
-.active .link:hover{
-    color:orangered
-}
-.menu {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.menu li {
-  list-style: none;
-  margin: 0 15px;
-}
-
-.menu .dish {
-  text-decoration: none;
-  color: #666;
-  font-size: 28px;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
-  padding-bottom: 5px;
-  padding-top:5px;
-}
-.menu .dish:hover{
-  color:#008000;
-  border-top: #008000 solid 1px;
-  border-bottom:#008000 solid 1px;
-}
-.menu .active .dish {
-  color: #008000;
-  border-color: #008000;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.menu li {
-  list-style: none;
-}
-
-.menu .dish {
-  text-decoration: none;
-  color: #666;
-  font-size: 18px;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 5px;
-  display: flex;
-}
-
-.menu .active .dish {
-  color: #008000;
-  border-color: #008000;
-}
-
-.menu .dish:hover {
-  color: #008000;
-}
-
-.category-toolbar {
-  background-color: #fff;
-}
-
-.category-toolbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  border: 1px black solid;
-  margin-bottom:15px;
-}
-
-.category-toolbar form {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-
-.category-toolbar .drinktype,
-.category-toolbar .price,
-.category-toolbar .search {
-  flex: 1;
-  min-width: 150px;
-  padding:25px;
-}
-
-.category-toolbar label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  float:left;
-}
-
-.category-toolbar .select-picker {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 4px;
-  float:right;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-}
-
-.input-group .form-control {
-  flex: 1;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
-  margin-bottom:3px;
-}
-
-.input-group-btn .btn {
-  border: 1px solid #ccc;
-  border-left: 0;
-  border-radius: 0 4px 4px 0;
-  background-color: #ffffff;
-}
-.row{
-  display:flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.drink-list .container {
-  display: flex;
-  border-radius: 1px black solid;
-  padding:10px;
-  width: 100%;
-}
-.product-item {
-  display:flex;
-  flex-wrap: wrap;
-  height: 27%;
-  width: 22%;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  transition: box-shadow 0.2s;
-}
-
-.product-item:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.product-item .item-wrapper {
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  width: 100%;
-}
-
-.product-item .sanpham {
-  width: 65%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.product-item .item-infor {
-  margin-top: 10px;
-}
-
-.product-item .item-name {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.product-item .item-price {
-  color: #007b00;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.product-item .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #008000;
-  border: solid 1px #008000;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.2s;
-  
-}
-
-.product-item .btn:hover {
-  background-color: #008000;
-  color:white;
-}
-
-.badge {
-  display: inline-block;
-  padding: 5px 10px;
-  color: #fff;
-  border-radius: 4px;
-  font-size: 12px;
-  margin-bottom: 5px;
-  position: absolute;
-}
-
-.best {
-  background-color: red;
-  margin-right:10%;
-  float:left;
-}
-
-.new {
-  background-color: green;
-  margin-left:8%;
-  }
-.product-item .sticky{
-  float:left;
-}
-h1{
-  color: #008000;
-  font-weight: lighter;
-  font-size: 50px;
-  font-family:"Lora";
-  text-align: center;
-}
-.col-xs-1 {
-  background-image: url("static/images/nuoc/background.png");
+.col.SpecialMenu{
+  width: 34rem;
+  height: 23rem;
   overflow: hidden;
-  background-size: cover;
-  background-color: #eff7f3;
-  clear:none;
-  width: 44%;
-  height: 27%;
+  background-repeat:round;
 }
-.col-xs-1 .sanpham{
-  width: 40%;
-  }
-.col-xs-1 .new{
-  margin-left:18%;
+.SpecialItem{
+  position: relative;
+  bottom: 11rem;
+  left: 18rem;
+  height: 23rem;
+  width: 17.25rem;
 }
-.col-xs-1 .best{
-  margin-left:-9%;
+.SpecialMenu{
+  background-image: url("/static/images/nuoc/background.png");
+}
+.item-name{
+  padding-top: 2rem;
+  color: #105600;
+}
+.item-price{
+  padding-top: 2rem;
+  color: #105600;
+}
+.Menu{
+  height: 23rem;
+  width: 18rem;
+  font-size: small;
+}
+.menuItemImage{
+  position: relative;
+  left: 3.5rem;
+  bottom: 1.5rem;
+  height: 14rem;
+  width: 10.25rem;
+}
+.menuItemImage1{
+  position: relative;
+  left: 3.5rem;
+  bottom: 1.5rem;
+  height: 14rem;
+  width: 10.25rem;
+}
+.menuItemImage2{
+  position: relative;
+  left: 3.5rem;
+  top: 0.2rem;
+  height: 14rem;
+  width: 10.25rem;
+}
+.menuItemImage3{
+  position: relative;
+  left: 3.5rem;
+  bottom: 1.5rem;
+  height: 14rem;
+  width: 10.25rem;
+}
+.card-tilte{
+  text-align: center;
+  position: relative;
+  bottom: 3rem;
+}
+.card-text{
+  position: relative;
+  bottom: 3rem;
+  text-align: center;
+}
+.priceItem{
+  font-size: large;
+  color: #0e4303;
+}
+.buybtn{
+  position: relative;
+  bottom: 6.8rem;
+  left: 4.8rem;
+}
+.normalMenu{
+  position: relative;
+  top: 1rem;
+  z-index: 2;
+}
+.normalMenu.Left{
+  left: 8.5rem;
 }

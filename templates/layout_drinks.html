@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{url_for('static', filename="layout_stores.css")}}">
+    <link rel="stylesheet" href="{{url_for('static', filename="layout_drinks.css")}}">
+    <link rel="stylesheet" href="{{url_for('static', filename="drinks.css")}}">
     <link rel="stylesheet" href="{{url_for('static', filename="body.css")}}">
     <!--import third-parties script-->
+    <script src="https://kit.fontawesome.com/9f2a0dbdd2.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
@@ -18,7 +20,7 @@
     <title>Phúc Long Coffee & Tea</title>
 </head>
 <body>
-    <header>
+    <header style="padding-bottom:10rem">
         <div class="container-fluid fixed-top" style="padding-top:10px; background-color: #f8f9fa">
             <div class="h_top">
                 <div class="container-fluid bg-light">
@@ -32,7 +34,7 @@
                             <div class="h_logo">
                                 <div class="h_logo_image">
                                     <section>
-                                        <a href="phuclong.com.vn">
+                                        <a href="{{url_for("home")}}">
                                             <img src="{{url_for("static", filename="images/home/logo.png")}}" class="carousel-image">
                                             <img src="{{url_for("static", filename="images/home/logo_1.png")}}" class="carousel-image">
                                             <img src="{{url_for("static", filename="images/home/logo_2.png")}}"class="carousel-image">
@@ -45,7 +47,9 @@
                             <div class="h_right" style="display:flex; justify-content:right;">
                                 <ul class="nav">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#" style="color:black;"><b>Đăng Nhập</b></a>
+                                        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:black;">
+                                            <b>Đăng Nhập</b>
+                                        </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link h_menu_Right" href="#" style="color: #198754">VN</a>
@@ -58,13 +62,13 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="btn btn-outline-success" href="#" id="CartButton">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ Hàng
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        
+
                     </div>
             </div>
             <div class="h_menu">
@@ -76,16 +80,14 @@
                         <div class="collapse navbar-collapse" id="NavMenu">
                             <ul class="navbar-nav me-auto mb-2 mb lg-0">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active" aria-current="page" style="color: #029823"><b>TRANG CHỦ</b></a>
+                                    <a href="{{url_for("home")}}" class="nav-link" aria-current="page" ><b>TRANG CHỦ</b></a>
                                 </li>
                                 <li class="nav-item">
                                     <div class="dropdown">
-                                        <a href="#" class="nav-link active dropbtn"><b>THỨC UỐNG</b></a>
+                                        <a href="#" class="nav-link active dropbtn" style="color: #029823"><b>THỨC UỐNG</b></a>
                                         <div class="dropdown-content">
-                                          <a href="#">Trà Gói</a>
-                                          <a href="#">Trà Hộp</a>
-                                          <a href="#">Trà Túi</a>
-                                          <a href="#">Thức Uống Ngọt Từ Trà</a>
+                                          <a href="{{url_for('tragoi')}}">Trà Gói</a>
+                                          <a href="{{url_for('drinks')}}">Thức Uống Ngọt Từ Trà</a>
                                         </div>
                                     </div>
                                 </li>
@@ -125,6 +127,7 @@
                     </div>
                 </nav>
         </div>
+        <script src="{{url_for("static", filename="script/script.js")}}"></script>
         <script src="{{url_for("static", filename="script/layout.js")}}"></script>
     </header>
     {% block content %}{% endblock %}
@@ -163,3 +166,52 @@
         © 2017 Bản quyền Phuc Long Co., Ltd
     </div>
 </body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 style="color: #009821"><b>Phúc Long Coffee & Tea<i class="fa-brands fa-pagelines"></i></b></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="logo mb-3">
+                    <div class="col-md-12 mb-3 text-center">
+                        <h4 style="color: #010019"><b>Đăng Nhập</b></h4>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" aria-describedby="username" ><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" id="username" placeholder="Tên tài khoản hoặc email">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" aria-describedby="password" ><i class="fa-solid fa-key"></i></span>
+                    <input type="password" class="form-control pass" id="password" placeholder="Mật khẩu">
+                </div>
+                <div class="container">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="checkbox1" onclick="Reveal()">
+                        <label class="form-check-label" for="checkbox1">Hiện mật khẩu</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="checkbox2">
+                        <label class="form-check-label" for="checkbox2">Nhớ thông tin đăng nhập</label>
+                    </div>
+                </div>
+                <div class="input-group mb-3 mt-3 GoogleLogin">
+                    <span class="input-group-text" style="background-color: white;color:red"><i class="fa-brands fa-google"></i></span>
+                    <button class="btn btn-danger">Đăng nhập bằng tài khoản Google</button>
+                </div>
+                <div class="input-group mb-3 mt-3 GoogleLogin">
+                    <span class="input-group-text" style="background-color: white;color:blue"><i class="fa-brands fa-facebook"></i></span>
+                    <button class="btn btn-primary">Đăng nhập bằng tài khoản Facebook</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Đăng Nhập</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

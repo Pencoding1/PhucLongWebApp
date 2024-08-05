@@ -1,3 +1,17 @@
+// modal setting
+function Reveal() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+// Carousel Show
 const carouselImages = document.querySelectorAll('.carousel-image');
 let currentIndex = 0;
 

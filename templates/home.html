@@ -1,32 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
 <!-- Body code starts from here-->
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
+<div class="slideshow-container" style="padding-top:150px">
 
-<div class="slideshow-container">
+    <div class="mySlides slide">
+      <img src="{{url_for("static", filename="images/home/slide1.jpg")}}" style="width:100%">
+    </div>
 
-<div class="mySlides slide">
-  <img src="{{url_for("static", filename="images/home/slide1.jpg")}}" style="width:100%">
-</div>
-
-<div class="mySlides slide">
-  <img src="{{url_for("static", filename="images/home/slide2.jpg")}}" style="width:100%">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot active" onclick="currentSlide(1)"></span> 
-  <span class="dot active" onclick="currentSlide(2)"></span> 
+    <div class="mySlides slide">
+      <img src="{{url_for("static", filename="images/home/slide2.jpg")}}" style="width:100%">
+    </div>
+    <div style="padding-bottom: 70px">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div style="text-align:center; padding-top: 10px">
+            <span class="dot active" onclick="currentSlide(1)"></span> 
+            <span class="dot active" onclick="currentSlide(2)"></span> 
+          </div>
+    </div>
+    <br>
 </div>
 <!-- The main content -->
 <div class="container-fluid" style="padding-bottom: 100px">
@@ -82,7 +74,7 @@
                 <option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
             </select>
         </div>
-        <div class="col-sm-9" style="padding-top:23px">
+        <div class="col-sm-9" style="">
             <label for="district"></label>
             <select id="district" name="district" onchange="displayChiNhanh()">
                 <option value="">Chọn quận/huyện</option>
