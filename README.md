@@ -12,6 +12,6 @@ Gain experience of developing a website.
 + The report (unchecked).
 ## What I have learnt:
 First, I've learnt HTML very very serious. I learnt it before but I didn't dive deep into it and actually create any website.
-Second, CSS and Bootstrap. Actually, I know a bit of CSS, all I used in my website was Bootstrap, kinda shame but for the requirement of time and deadline, it left me no choice.
-Third, I've learn some JS, it isn't difference from another script language so I don't really put must effort on learning it. Like, I actually didn't learn it when I was doing the project but I know it.
+Second, CSS and Bootstrap. Actually, I know a bit of CSS, all I used in my website was Bootstrap, kinda shame but for the requirement of time and deadline, it left me no choice.\n
+Third, I've learn some JS, it isn't difference from another script language so I don't really put must effort on learning it. Like, I actually didn't learn it when I was doing the project but I know it.\n
 Last, I know litter bit of Flask.
