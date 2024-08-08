@@ -1,27 +1,17 @@
-========================= PHUC LONG WEBSITE ============================
-This is a clone of the Phuc Long website for a college project.
-========================================================================
-
-ABOUT:
-A website that allows customers to order the food or drinks they desire. It also enables administrators to manage their branches.
-
-GOAL AND REQUIREMENTS:
-+ A complete website that allows people to sign in or sign up.
-+ Allows customers to browse through the menu and add items they want to the cart.
-+ Enables administrators to manage information about their branches.
-+ ...
-
-KEY LEARNING:
-...
-
-INSTALLATION:
-PYTHON 3.9
-FLASK
-MICROSOFT SQL SERVER
-...
-
-PROJECT STATUS:
-...
-
-CREDIT:
-AUTHOR: PENCODING1, ...
+# Phuc Long Coffee & Tea Website
+This is a website of a coffee shop called Phuc Long. It's a project of my subject on school.
+## GOAL:
+Create a clone of the orginal website: https://phuclong.com.vn/
+## SUB-GOAL:
+Gain experience of developing a website.
+## TASKS:
++ The home page (checked).
++ Cart menu (unchecked).
++ Login / sign up form (checked a half).
++ The drinks menu (Checked).
++ The report (unchecked).
+## What I have learnt:
+First, I've learnt HTML very very serious. I learnt it before but I didn't dive deep into it and actually create any website.
+Second, CSS and Bootstrap. Actually, I know a bit of CSS, all I used in my website was Bootstrap, kinda shame but for the requirement of time and deadline, it left me no choice.
+Third, I've learn some JS, it isn't difference from another script language so I don't really put must effort on learning it. Like, I actually didn't learn it when I was doing the project but I know it.
+Last, I know litter bit of Flask.
