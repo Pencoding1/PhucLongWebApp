@@ -1,5 +1,6 @@
 # Phuc Long Coffee & Tea Website
 This is a website of a coffee shop called Phuc Long. It's a project of my subject on school.
+### The complete website is updated everytime in: https://penpython215.pythonanywhere.com/
 ## GOAL:
 Create a clone of the orginal website: https://phuclong.com.vn/
 ## SUB-GOAL:
