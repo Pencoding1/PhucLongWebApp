@@ -19,118 +19,145 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <title>Phúc Long Coffee & Tea</title>
     </head>
+
     <body>
-        <header>
-            <div class="container-fluid fixed-top" style="padding-top:10px; background-color: #f8f9fa">
-                <div class="h_top">
-                    <div class="container-fluid bg-light">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="h_delivered" style="width: 200px; heigth: 50px; padding-left:50px">
-                                    <a href="tel:18006779"><img src="{{url_for("static", filename="images/home/delivery.png")}}"></a>
-                                </div>
-                            </div>
-                            <div class="col-5">
-                                <div class="h_logo">
-                                    <div class="h_logo_image">
-                                        <section>
-                                            <a href="{{url_for("home")}}">
-                                                <img src="{{url_for("static", filename="images/home/logo.png")}}" class="carousel-image">
-                                                <img src="{{url_for("static", filename="images/home/logo_1.png")}}" class="carousel-image">
-                                                <img src="{{url_for("static", filename="images/home/logo_2.png")}}"class="carousel-image">
-                                            </a>
-                                        </section>
+        <div id="cartSidebar" class="sidebar">
+            <div class="card product-wrapper">
+                <img class="Product-image" src="{{url_for("static", filename="images/nuoc/tra1.png")}}" alt="Ảnh của sản phẩm">
+                <div class="card-body product">
+                    <h6 class="product-title"><b>Tên sản phẩm</b></h6>
+                    <p class="card-text">Trà Mẵng Cầu Sợi Dừa Jelly</p>
+                    <p class="prices-tag"><b>Đơn giá</b></p>
+                    <p class="prices-drink">65.000</p>
+                    <input class="amount-product" type="number" value="1" min="1" max="999"></input>
+                </div>
+            </div>
+            <div class="container Cardfooter">
+                <div class="row">
+                    {% if value %}
+                        <h5><b>Tổng tiền:</b> {{value}}</h5>
+                    {% else %}
+                        <h5><b>Tổng tiền:</b> 65.000đ</h5>
+                    {% endif %}
+                </div>
+                <div class="row row-cols-2 ">
+                    <a class="col btn btn-secondary closeButton" onclick="closeSideBar()">Đóng</a>
+                    <a class="col btn btn-success orderButton" href="#">Đặt Hàng</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="bodyWrap">
+            <header>
+                <div class="container-fluid fixed-top" style="padding-top:10px; background-color: #f8f9fa">
+                    <div class="h_top">
+                        <div class="container-fluid bg-light">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="h_delivered" style="width: 200px; heigth: 50px; padding-left:50px">
+                                        <a href="tel:18006779"><img src="{{url_for("static", filename="images/home/delivery.png")}}"></a>
                                     </div>
                                 </div>
+                                <div class="col-5">
+                                    <div class="h_logo">
+                                        <div class="h_logo_image">
+                                            <section>
+                                                <a href="{{url_for("home")}}">
+                                                    <img src="{{url_for("static", filename="images/home/logo.png")}}" class="carousel-image">
+                                                    <img src="{{url_for("static", filename="images/home/logo_1.png")}}" class="carousel-image">
+                                                    <img src="{{url_for("static", filename="images/home/logo_2.png")}}"class="carousel-image">
+                                                </a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="h_right" style="display:flex; justify-content:right;">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:black;">
+                                                    <b>Đăng Nhập</b>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link h_menu_Right" href="#" style="color: #198754">VN</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link h_menu_Right" href="#" style="color: gray">|</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link h_menu_Right" href="#" style="color: gray">EN</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="btn btn-outline-success" onclick="openSideBar()" id="CartButton">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
                             </div>
-                            <div class="col-4">
-                                <div class="h_right" style="display:flex; justify-content:right;">
-                                    <ul class="nav">
+                    </div>
+                    <div class="h_menu">
+                        <nav class="navbar navbar-expand-md navbar-light bg-light">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavMenu" aria-controls="NavMenu" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                <div class="collapse navbar-collapse" id="NavMenu">
+                                    <ul class="navbar-nav me-auto mb-2 mb lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:black;">
-                                                <b>Đăng Nhập</b>
-                                            </a>
+                                            <a href="{{url_for("home")}}" class="nav-link active" aria-current="page" style="color: #029823"><b>TRANG CHỦ</b></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link h_menu_Right" href="#" style="color: #198754">VN</a>
+                                            <div class="dropdown">
+                                                <a href="#" class="nav-link active dropbtn"><b>THỨC UỐNG</b></a>
+                                                <div class="dropdown-content">
+                                                  <a href="{{url_for('tragoi')}}">Trà Gói</a>
+                                                  <a href="{{url_for('drinks')}}">Thức Uống Ngọt Từ Trà</a>
+                                                </div>
+                                            </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link h_menu_Right" href="#" style="color: gray">|</a>
+                                            <div class="dropdown">
+                                                <a href="#" class="nav-link active dropbtn"><b>BÁNH NGỌT</b></a>
+                                                <div class="dropdown-content">
+                                                  <a href="#">Bánh tráng Miệng</a>
+                                                </div>
+                                            </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link h_menu_Right" href="#" style="color: gray">EN</a>
+                                            <div class="dropdown">
+                                                <a href="#" class="nav-link active dropbtn"><b>KHUYẾN MÃI</b></a>
+                                                <div class="dropdown-content">
+                                                  <a href="#">Khuyến Mãi Trong Tháng</a>
+                                                  <a href="#">Các Mã Giảm Giá</a>
+                                                </div>
+                                            </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="btn btn-outline-success" href="#" id="CartButton">
-                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng
-                                            </a>
+                                            <div class="dropdown">
+                                                <a href="#" class="nav-link active dropbtn"><b>VỀ CHÚNG TÔI</b></a>
+                                                <div class="dropdown-content">
+                                                  <a href="#">Chi nhánh của công ti</a>
+                                                  <a href="#">Đội ngũ nhân viên</a>
+                                                  <a href="#">Mục tiêu</a>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
+                                    <form class="d-flex pe-5">
+                                        <input class="form-control me-2" type="search" placeholder="Search" arial-label="Search">
+                                        <button class="btn btn-outline-dark" type="submit"><i class="lni lni-search-alt"></i></button>
+                                    </form>
                                 </div>
                             </div>
-
-                        </div>
+                        </nav>
                 </div>
-                <div class="h_menu">
-                    <nav class="navbar navbar-expand-md navbar-light bg-light">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavMenu" aria-controls="NavMenu" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                            <div class="collapse navbar-collapse" id="NavMenu">
-                                <ul class="navbar-nav me-auto mb-2 mb lg-0">
-                                    <li class="nav-item">
-                                        <a href="{{url_for("home")}}" class="nav-link active" aria-current="page" style="color: #029823"><b>TRANG CHỦ</b></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <div class="dropdown">
-                                            <a href="#" class="nav-link active dropbtn"><b>THỨC UỐNG</b></a>
-                                            <div class="dropdown-content">
-                                              <a href="{{url_for('tragoi')}}">Trà Gói</a>
-                                              <a href="{{url_for('drinks')}}">Thức Uống Ngọt Từ Trà</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <div class="dropdown">
-                                            <a href="#" class="nav-link active dropbtn"><b>BÁNH NGỌT</b></a>
-                                            <div class="dropdown-content">
-                                              <a href="#">Bánh tráng Miệng</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <div class="dropdown">
-                                            <a href="#" class="nav-link active dropbtn"><b>KHUYẾN MÃI</b></a>
-                                            <div class="dropdown-content">
-                                              <a href="#">Khuyến Mãi Trong Tháng</a>
-                                              <a href="#">Các Mã Giảm Giá</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <div class="dropdown">
-                                            <a href="#" class="nav-link active dropbtn"><b>VỀ CHÚNG TÔI</b></a>
-                                            <div class="dropdown-content">
-                                              <a href="#">Chi nhánh của công ti</a>
-                                              <a href="#">Đội ngũ nhân viên</a>
-                                              <a href="#">Mục tiêu</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <form class="d-flex pe-5">
-                                    <input class="form-control me-2" type="search" placeholder="Search" arial-label="Search">
-                                    <button class="btn btn-outline-dark" type="submit"><i class="lni lni-search-alt"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </nav>
-            </div>
-            <script src="{{url_for("static", filename="script/script.js")}}"></script>
-            <script src="{{url_for("static", filename="script/layout.js")}}"></script>
-        </header>
-        {% block content %}{% endblock %}
+                <script src="{{url_for("static", filename="script/script.js")}}"></script>
+                <script src="{{url_for("static", filename="script/layout.js")}}"></script>
+            </header>
+            {% block content %}{% endblock %}
         <footer id="footer">
             <div class="f-bot">
                 <div class="container">

@@ -11,6 +11,7 @@ function Reveal() {
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
+
 // Carousel Show
 const carouselImages = document.querySelectorAll('.carousel-image');
 let currentIndex = 0;
@@ -29,3 +30,16 @@ function nextImage() {
 
 showImage(currentIndex);
 setInterval(nextImage, 4000);
+
+// Cart
+let count = 0;
+function openSideBar(){
+  document.getElementById("cartSidebar").style.width= "30rem";
+  document.getElementById("bodyWrap").style.marginRight= "30rem";
+  document.getElementById("cartSidebar").style.borderColor = "#03b62a";
+}
+function closeSideBar(){
+  document.getElementById("cartSidebar").style.width= "0rem";
+  document.getElementById("bodyWrap").style.marginRight= "0rem";
+  document.getElementById("cartSidebar").style.borderColor = "white"
+}

@@ -133,3 +133,7 @@ h2 {
   color: #ffffff;
   border: 1px solid orangered !important; 
 }
+.Content{
+  text-align: justify;
+  font-size: 0.875rem;
+}
