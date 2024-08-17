@@ -69,7 +69,7 @@
   background-image: url("/static/images/nuoc/background.png");
 }
 .item-name{
-  padding-top: 2rem;
+  padding-top: 4rem;
   color: #105600;
 }
 .item-price{
@@ -109,24 +109,23 @@
   height: 14rem;
   width: 10.25rem;
 }
-.card-tilte{
+.card-title{
   text-align: center;
   position: relative;
   bottom: 3rem;
 }
-.card-text{
-  position: relative;
-  bottom: 3rem;
+.card-describe{
+  position: absolute;
+  bottom: 5rem;
   text-align: center;
 }
-.priceItem{
+.prices{
+  text-align: center;
   font-size: large;
   color: #0e4303;
 }
-.buybtn{
-  position: relative;
-  bottom: 6.8rem;
-  left: 4.8rem;
+.order-btn{
+  margin-left: 5.5rem;
 }
 .normalMenu{
   position: relative;

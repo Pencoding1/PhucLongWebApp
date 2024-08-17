@@ -53,7 +53,7 @@
   </div>
 </div>
 <div class="container">
-  <div class="row row-cols-4">
+  <div class="row row-cols-4 SpecialRow">
     <div class="col mt-4 border-rounded SpecialMenu">
         <span class="badge text-bg-danger ms-1">Bán chạy</span>
         <span class="badge text-bg-success" style="position: relative; left: 23rem">Món mới</span>
@@ -64,121 +64,9 @@
         </div>
         <img class="SpecialItem" src="{{url_for("static", filename="images/nuoc/tra1.png")}}">
     </div>
-    <div class="col">
-      <span class="badge text-bg-danger normalMenu">Bán chạy</span>
-      <span class="badge text-bg-success normalMenu Left">Món mới</span>
-      <div class="card Menu">
-        <img class="menuItemImage" src="{{url_for("static", filename="images/nuoc/tra2.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Trà Mãng Cầu Đá Xay</b></h6>
-          <p class="d-flex justify-content-center card-text">BST Cầu Phúc Đong Đầy - Long Niên May Mắn</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>65.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <span class="badge text-bg-danger normalMenu">Bán chạy</span>
-      <span class="badge text-bg-success normalMenu Left">Món mới</span>
-      <div class="card Menu">
-        <img class="menuItemImage" src="{{url_for("static", filename="images/nuoc/tra3.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Trà Sữa Mãng Cầu Jelly Dừa Sợi</b></h6>
-          <p class="d-flex justify-content-center card-text">BST Cầu Phúc Đong Đầy - Long Niên May Mắn</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>65.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
   </div>
-  <div class="row row-cols-4">
-    <div class="col">
-      <span class="badge text-bg-danger normalMenu">Bán chạy</span>
-      <span class="badge text-bg-success normalMenu Left">Món mới</span>
-      <div class="card Menu">
-        <img class="menuItemImage1" src="{{url_for("static", filename="images/nuoc/tra4.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Trà Lucy</b></h6>
-          <p class="d-flex justify-content-center card-text">Mang lại may mắn cho bạn ngày mới tốt lành</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>65.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <span class="badge text-bg-danger normalMenu">Bán chạy</span>
-      <div class="card Menu">
-        <img class="menuItemImage2 mb-5" src="{{url_for("static", filename="images/nuoc/tra5.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Hồng Trà Chanh</b></h6>
-          <p class="d-flex justify-content-center card-text">Lime Black Tea</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>40.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <span class="badge text-bg-danger normalMenu">Bán chạy</span>
-      <span class="badge text-bg-success normalMenu Left">Món mới</span>
-      <div class="card Menu">
-        <img class="menuItemImage2 mb-5" src="{{url_for("static", filename="images/nuoc/tra6.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Trà Sữa Matcha</b></h6>
-          <p class="d-flex justify-content-center card-text">Matcha Milk Tea</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>40.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <span class="badge text-bg-success normalMenu Left">Món mới</span>
-      <div class="card Menu">
-        <img class="menuItemImage2 mb-5" src="{{url_for("static", filename="images/nuoc/tra7.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Hồng Trà Sữa</b></h6>
-          <p class="d-flex justify-content-center card-text">Peach Black Milk Tea</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>45.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row row-cols-4 mt-3">
-    <div class="col" style="position:relative; bottom:1.5rem;">
-      <span class="badge text-bg-success normalMenu Left">Món mới</span>
-      <div class="card Menu">
-        <img class="menuItemImage2 mb-5" src="{{url_for("static", filename="images/nuoc/tra8.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Chanh Đá Xay</b></h6>
-          <p class="d-flex justify-content-center card-text">Lime Ice Blended</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>55.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card Menu">
-        <img class="menuItemImage2 mb-5" src="{{url_for("static", filename="images/nuoc/tra9.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Mathcha Đá Xay</b></h6>
-          <p class="d-flex justify-content-center card-text">Matcha Ice Blended</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>65.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card Menu">
-        <img class="menuItemImage2 mb-5" src="{{url_for("static", filename="images/nuoc/tra10.png")}}">
-        <div class="card-body">
-          <h6 class="d-flex justify-content-center card-tilte"><b>Oreo Capuchino Đá Xay</b></h6>
-          <p class="d-flex justify-content-center card-text">Oreo Espresso Ice Blended</p>
-          <p class="d-flex justify-content-center card-text priceItem"><b>65.000đ</b></p>
-          <a class="btn btn-outline-success mt-5 buybtn">Đặt Hàng</a>
-        </div>
-      </div>
-    </div>
+  <div class="row row-cols-4 listProduct">
   </div>
 </div>
-</div>
+<script src="{{url_for("static", filename="script/drinksProduct.js")}}"></script>
 {% endblock content %}

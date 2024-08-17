@@ -1,0 +1,83 @@
+[
+    {
+        "id":1,
+        "tag": "both",
+        "style":"menuItemImage1",
+        "name": "Trà Mãng Cầu Đá Xay",
+        "describe":"BST Cầu Phúc Đong Đầy - Long Niên May Mắn",
+        "image":"images/nuoc/tra1.png",
+        "prices": 65
+    },
+    {
+        "id":2,
+        "tag": "both",
+        "style":"menuItemImage1",
+        "name": "Trà Sữa Mãng Cầu Jelly Dừa Sợi",
+        "describe":"BST Cầu Phúc Đong Đầy - Long Niên May Mắn",
+        "image":"images/nuoc/tra2.png",
+        "prices": 65
+    },
+    {
+        "id":3,
+        "tag": "hot",
+        "style":"menuItemImage1",
+        "name": "Trà Lucky",
+        "describe":"Mang lại may mắn cho bạn ngày mới tốt lành",
+        "image":"images/nuoc/tra3.png",
+        "prices": 40
+    },
+    {
+        "id":4,
+        "tag": "hot",
+        "style":"menuItemImage1",
+        "name": "Hồng Trà Chanh",
+        "describe":"Lime Black Tea",
+        "image":"images/nuoc/tra4.png",
+        "prices": 40
+    },
+    {
+        "id":5,
+        "tag": "both",
+        "style":"menuItemImage2",
+        "name": "Trà Sữa Matcha",
+        "describe":"Matcha Milk Tea",
+        "image":"images/nuoc/tra5.png",
+        "prices": 40
+    },
+    {
+        "id":6,
+        "tag": "both",
+        "style":"menuItemImage2",
+        "name": "Hồng Trà Sữa",
+        "describe":"Peach Black Milk Tea",
+        "image":"images/nuoc/tra6.png",
+        "prices": 45
+    },
+    {
+        "id":7,
+        "tag": "both",
+        "style":"menuItemImage2", 
+        "name": "Chanh Đá Xay",
+        "describe":"Lime Ice Blended",
+        "image":"images/nuoc/tra7.png",
+        "prices": 55
+    },
+    {
+        "id":8,
+        "tag": "new",
+        "style":"menuItemImage2", 
+        "name": "Mathcha Đá Xay",
+        "describe":"Matcha Ice Blended",
+        "image":"images/nuoc/tra8.png",
+        "prices": 65
+    },
+    {
+        "id":9,
+        "tag": "new",
+        "style":"menuItemImage2", 
+        "name": "Oreo Capuchino Đá Xay",
+        "describe":"Oreo Espresso Ice Blended",
+        "image":"images/nuoc/tra9.png",
+        "prices": 65
+    }
+]
